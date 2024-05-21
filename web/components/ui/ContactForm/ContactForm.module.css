@@ -1,0 +1,29 @@
+.root {
+  @apply relative;
+}
+
+.fields {
+  @apply flex flex-col;
+}
+
+.label {
+  @apply font-bold;
+}
+.labelRequiredMark {
+  @apply text-error inline;
+}
+
+.field {
+  @apply block;
+}
+
+.noJsWarning {
+  @apply invisible hidden;
+  /* move down before production */
+  @apply visible block;
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.noJs.noJsWarning {
+  @apply visible block;
+}

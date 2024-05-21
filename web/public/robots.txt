@@ -1,0 +1,11 @@
+Sitemap: https://smarthernews.com/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+User-agent: *
+Disallow: /api/*
+Disallow: /_next/*
+Disallow: /*.js
+Disallow: /search
+Disallow: /author

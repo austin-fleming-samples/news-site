@@ -1,0 +1,1 @@
+export const thenify = (value: any): Promise<any> => Promise.resolve(value)

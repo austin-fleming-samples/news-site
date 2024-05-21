@@ -1,0 +1,57 @@
+{
+  "name": "smarthernews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/smarthernews/smarthernews.git",
+  "author": "Austin <austin@flimflamfactory.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "web",
+    "studio"
+  ],
+  "scripts": {
+    "dev:studio": "cd studio && yarn dev",
+    "dev:web": "vercel dev",
+    "dev:web:local": "cd web && yarn dev",
+    "codegen": "sanity-codegen"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.2",
+    "@types/react": "^17.0.15",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-compat": "^3.11.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-md": "^1.0.19",
+    "eslint-plugin-no-secrets": "^0.8.9",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-typescript-sort-keys": "^1.7.0",
+    "eslint-plugin-unicorn": "^40.1.0",
+    "eslint-plugin-xss": "^0.1.11",
+    "prettier": "^2.3.2",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "sanity-codegen": "^0.9.5"
+  }
+}

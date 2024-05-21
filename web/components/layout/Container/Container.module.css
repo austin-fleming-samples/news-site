@@ -1,0 +1,36 @@
+.root {
+  @apply mx-auto w-full
+    p-4;
+}
+
+.widthNarrow {
+  @apply w-full max-w-[60ch];
+}
+
+.widthFull {
+  @apply max-w-full
+  sm:w-[theme('screens.sm')]
+  md:w-[theme('screens.md')]
+  lg:w-[theme('screens.lg')]
+  xl:w-[theme('screens.xl')];
+}
+
+.heightFull {
+  @apply h-full;
+}
+
+.heightScreen {
+  @apply h-screen;
+}
+
+.noVerticalPadding {
+  @apply py-0;
+}
+
+.contentVertical {
+  @apply flex flex-col;
+}
+
+.contentCenter {
+  @apply flex flex-col items-center;
+}

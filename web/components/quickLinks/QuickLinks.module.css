@@ -1,0 +1,8 @@
+.root {
+  background-image: url('/quicklinks-background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @apply bg-olive;
+}

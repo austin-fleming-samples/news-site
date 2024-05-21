@@ -1,0 +1,23 @@
+.root {
+  @apply fixed top-0 right-0 bottom-0 left-0 z-modal bg-transparent;
+  @apply hidden invisible;
+}
+.root.isOpen {
+  @apply visible flex flex-col justify-center items-center;
+}
+
+.backdrop {
+  @apply absolute top-0 right-0 bottom-0 left-0 z-overlay;
+  @apply bg-[rgba(0,0,0,0.5)];
+}
+
+.modal {
+  @apply relative bg-background border-primary border-solid border-2 z-modal;
+  @apply flex flex-col justify-center items-center;
+
+  @apply min-w-[250px] max-w-[90%] min-h-[300px] px-6 py-10;
+}
+
+.closeButton {
+  @apply absolute top-4 right-4;
+}

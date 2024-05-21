@@ -1,0 +1,7 @@
+.next
+node_modules
+out
+generated
+__deprecated__
+codegen.d.ts
+.vercel

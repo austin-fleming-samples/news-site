@@ -1,0 +1,130 @@
+.root {
+  @apply sticky
+  block
+  top-0
+  right-0
+  left-0
+  w-full
+  z-headerSecondary;
+}
+
+.navbar {
+  @apply relative
+  w-full
+  bg-background
+  h-16;
+
+  /* TODO: centralize */
+  @apply border-b
+  border-b-primary-muted
+  border-solid;
+}
+
+.toolbar {
+  @apply w-full
+  h-full
+  flex
+  flex-row
+  flex-nowrap
+  justify-between
+  items-center;
+}
+
+.logoBlock {
+  @apply flex
+  flex-col
+  justify-between
+  py-3
+  px-0
+  h-full;
+}
+
+.logoLink {
+  @apply relative block h-full w-full;
+}
+
+.logoImage {
+  @apply h-full object-left-top;
+}
+
+.logoTagLine {
+  @apply block
+  text-xs
+  font-bold
+  uppercase
+  tracking-wide
+  leading-none;
+}
+
+.desktopNav {
+  @apply hidden
+  invisible
+  h-full
+  flex-row
+  flex-nowrap
+  justify-end
+  items-center;
+
+  @apply lg:flex
+  lg:visible;
+}
+
+.desktopNavLink {
+  @apply pl-4;
+}
+
+.desktopNavLink,
+.mobileNavLink {
+  @apply font-secondary
+  font-bold;
+}
+
+.mobileNav {
+  @apply w-full
+  right-0
+  left-0
+  top-16
+  overflow-y-hidden
+  bg-background
+  transition-all
+  duration-300
+  z-headerPrimary;
+
+  @apply lg:hidden
+  lg:invisible
+  !important;
+
+  /* TODO: centralize */
+  @apply border-b
+  border-b-primary-muted
+  border-solid;
+
+  @apply h-0;
+}
+.mobileNav.mobileNavIsOpen {
+  @apply absolute 
+  visible 
+  h-auto;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.mobileNavLink {
+  @apply w-full
+  flex
+  flex-col
+  justify-center
+  items-center
+  text-sm
+  py-[1em]
+  bg-background
+  hover:bg-sage-pale
+  active:bg-sage-pale
+  hover:opacity-50
+  focus:bg-blush-pale;
+
+  /* TODO: centralize */
+  @apply border-b
+  border-b-primary-muted
+  border-solid;
+}

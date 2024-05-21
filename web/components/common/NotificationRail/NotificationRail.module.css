@@ -1,0 +1,25 @@
+.root {
+  @apply w-full 
+  bg-primary;
+}
+
+.contentContainer {
+  @apply flex
+  flex-row
+  flex-nowrap
+  justify-between
+  items-center;
+}
+
+.message {
+  @apply block
+  whitespace-nowrap 
+  overflow-hidden 
+  w-full 
+  text-ellipsis
+  text-left;
+}
+
+.breakingLabel {
+  @apply font-bold;
+}

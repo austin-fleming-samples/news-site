@@ -1,0 +1,72 @@
+.heading1 {
+  @apply font-secondary font-bold leading-[1.3] text-primary;
+  font-size: var(--fs-jumbo);
+}
+
+.heading2 {
+  @apply font-secondary font-bold leading-[1.3] text-primary;
+  font-size: var(--fs-xxxl);
+}
+
+.heading3 {
+  @apply font-secondary font-bold leading-[1.3] text-primary;
+  font-size: var(--fs-xxl);
+}
+
+.heading4 {
+  @apply font-secondary font-bold leading-[1.3] text-primary;
+  font-size: var(--fs-xl);
+}
+
+.heading5 {
+  @apply font-secondary font-bold leading-[1.3] text-primary;
+  font-size: var(--fs-lg);
+}
+
+.heading6 {
+  @apply font-secondary font-bold leading-[1.3] text-primary;
+  font-size: var(--fs-md);
+}
+
+.subtitle1 {
+  @apply font-primary font-normal uppercase tracking-wider leading-[1.3] text-primary;
+  font-size: var(--fs-base);
+}
+
+.subtitle2 {
+  @apply font-primary font-normal uppercase tracking-wider leading-[1.3] text-primary-muted;
+  font-size: var(--fs-base);
+}
+
+.body1 {
+  @apply font-primary font-normal leading-[1.3] text-primary;
+  font-size: var(--fs-base);
+}
+
+.body2 {
+  @apply font-primary font-normal leading-[1.3] text-primary-muted;
+  font-size: var(--fs-base);
+}
+
+/* TODO: [styles] is this the same as overline? */
+.caption {
+  /* TODO: [styles] confirm leading. Missing in legacy. */
+  @apply font-primary font-normal leading-[1.3] uppercase tracking-wider;
+  font-size: var(--fs-sm);
+}
+
+.overline {
+  /* TODO: [styles] confirm leading. Missing in legacy. */
+  @apply font-primary font-normal leading-[1.3] uppercase tracking-normal;
+  font-size: var(--fs-sm);
+}
+
+.buttonBase {
+  @apply font-primary text-primary uppercase tracking-wider leading-none no-underline;
+  font-size: var(--fs-base);
+}
+
+.buttonSmall {
+  @apply font-primary text-primary uppercase tracking-wider leading-none no-underline;
+  font-size: var(--fs-sm);
+}

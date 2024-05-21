@@ -1,0 +1,13 @@
+.customPriceField {
+}
+/* Chrome, Safari, Edge, Opera */
+.customPriceField::-webkit-outer-spin-button,
+.customPriceField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.customPriceField[type='number'] {
+  -moz-appearance: textfield;
+}

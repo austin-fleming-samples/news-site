@@ -1,0 +1,30 @@
+{
+  "name": "smarthernews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/smarthernews/smarthernews.git",
+  "author": "Austin <austin@flimflamfactory.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "web",
+    "studio"
+  ],
+  "scripts": {
+    "web": "yarn workspace web",
+    "studio": "yarn workspace studio",
+    "dev:studio": "cd studio && yarn dev",
+    "dev:web": "vercel dev",
+    "dev:web:local": "cd web && yarn dev",
+    "codegen": "sanity-codegen"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.10",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "prettier": "^2.5.1",
+    "sanity-codegen": "^0.9.8"
+  },
+  "packageManager": "yarn@3.1.1"
+}

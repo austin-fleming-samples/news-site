@@ -1,0 +1,94 @@
+.root {
+  @apply font-primary
+  uppercase 
+  tracking-wider 
+  leading-none 
+  no-underline;
+
+  @apply block
+  relative
+  px-[2em]
+  py-[0.75em]
+  border-transparent
+  border-2
+  rounded-none
+  transition-colors
+  duration-300;
+
+  @apply block
+  text-center;
+
+  @apply leading-none;
+}
+
+.isDisabled {
+  @apply pointer-events-none;
+  @apply opacity-70;
+}
+
+.sizeSmall {
+  @apply text-sm;
+}
+.sizeMedium {
+  @apply text-base;
+}
+.sizeLarge {
+  @apply text-lg;
+}
+
+.variantText {
+  @apply p-0 border-none bg-transparent opacity-100 transition-opacity;
+}
+.variantText.colorPrimary {
+  @apply text-primary hover:opacity-50;
+}
+.variantText.colorSecondary {
+  @apply text-olive hover:opacity-50;
+}
+.variantText.colorInverted {
+  @apply text-background hover:opacity-50;
+}
+
+.variantGhost {
+  @apply border-transparent bg-transparent;
+}
+.variantGhost.colorPrimary {
+  @apply text-primary hover:bg-primary-pale;
+}
+.variantGhost.colorSecondary {
+  @apply text-olive hover:bg-olive-pale;
+}
+.variantGhost.colorInverted {
+  @apply text-background hover:bg-background-pale;
+}
+
+.variantOutline,
+.variantOutline.colorPrimary {
+  @apply border-primary bg-background text-primary;
+  @apply hover:bg-primary hover:text-background;
+}
+.variantOutline.colorSecondary {
+  @apply border-olive bg-background text-olive;
+  @apply hover:bg-olive hover:text-background;
+}
+.variantOutline.colorInverted {
+  @apply border-background bg-primary text-background;
+  @apply hover:bg-background hover:text-primary;
+}
+
+.variantFill {
+  @apply border-0;
+}
+.variantFill,
+.variantFill.colorPrimary {
+  @apply bg-primary text-background;
+  @apply hover:bg-primary-muted;
+}
+.variantFill.colorSecondary {
+  @apply bg-olive text-background;
+  @apply hover:bg-olive-muted;
+}
+.variantFill.colorInverted {
+  @apply bg-background text-primary;
+  @apply hover:bg-background-light;
+}

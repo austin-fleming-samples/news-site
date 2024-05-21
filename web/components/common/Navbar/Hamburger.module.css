@@ -1,0 +1,61 @@
+.root {
+  @apply flex
+  items-center
+  justify-end
+  w-10
+  h-10
+  bg-transparent
+  border-none
+  cursor-pointer
+  p-0
+  z-overlay;
+
+  @apply lg:hidden
+  lg:invisible
+  lg:pointer-events-none;
+}
+
+.hamburger {
+  @apply w-[30px]
+  h-[30px];
+}
+
+.line01,
+.line02,
+.line03 {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line01 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.isOpen .line01 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.line02 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.isOpen .line02 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.line03 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.isOpen .line03 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}

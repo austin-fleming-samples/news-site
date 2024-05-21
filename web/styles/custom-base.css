@@ -1,0 +1,127 @@
+:root {
+  --scale--major-second: 1.125;
+  --scale--major-third: 1.25;
+
+  --fs-base: 1rem;
+
+  --scale: var(--scale--major-second);
+
+  /* 
+  HACK: using desktop font size on mobile for font size < base.
+  Done because changing the scaling factor to decrease font sizes > base
+  also makes sub-base sizes larger on mobile.
+*/
+  --fs-sm: calc(var(--fs-base) / var(--scale--major-third));
+  --fs-xs: calc(var(--fs-sm) / var(--scale--major-third));
+  --fs-lg: calc(var(--fs-base) * var(--scale));
+  --fs-xl: calc(var(--fs-lg) * var(--scale));
+  --fs-2xl: calc(var(--fs-xl) * var(--scale));
+  --fs-3xl: calc(var(--fs-2xl) * var(--scale));
+  /* NOTE: [legacy] 4xl was called "Jumbo" */
+  --fs-4xl: calc(var(--fs-3xl) * var(--scale));
+  --fs-5xl: calc(var(--fs-4xl) * var(--scale));
+  --fs-6xl: calc(var(--fs-5xl) * var(--scale));
+  --fs-7xl: calc(var(--fs-6xl) * var(--scale));
+  --fs-8xl: calc(var(--fs-7xl) * var(--scale));
+  --fs-9xl: calc(var(--fs-8xl) * var(--scale));
+
+  /* TODO: [styles] currently, 'tablet' is hard coded. */
+  @media only screen and (min-width: 848px) {
+    --scale: var(--scale--major-third);
+
+    /* 
+  HACK: using desktop font size on mobile for font size < base.
+  Done because changing the scaling factor to decrease font sizes > base
+  also makes sub-base sizes larger on mobile.
+  */
+    /* --fs-sm: calc(var(--fs-base) / var(--scale)); */
+    --fs-lg: calc(var(--fs-base) * var(--scale));
+    --fs-xl: calc(var(--fs-lg) * var(--scale));
+    --fs-2xl: calc(var(--fs-xl) * var(--scale));
+    --fs-3xl: calc(var(--fs-2xl) * var(--scale));
+    /* NOTE: [legacy] 4xl was called "Jumbo" */
+    --fs-4xl: calc(var(--fs-3xl) * var(--scale));
+    --fs-5xl: calc(var(--fs-4xl) * var(--scale));
+    --fs-6xl: calc(var(--fs-5xl) * var(--scale));
+    --fs-7xl: calc(var(--fs-6xl) * var(--scale));
+    --fs-8xl: calc(var(--fs-7xl) * var(--scale));
+    --fs-9xl: calc(var(--fs-8xl) * var(--scale));
+  }
+}
+
+:root {
+  /* BRAND */
+  --c-black: #1f1f1f;
+  --c-black--light: #4b4b4b;
+  --c-black--pale: #d2d2d2;
+  --c-white: #fafafa;
+  --c-white--dark: #c8c8c8;
+  --c-white--darker: #323232;
+  --c-blush: #f8d8d5;
+  --c-blush--light: #f9dfdd;
+  --c-blush--pale: #fdf9f8;
+  --c-sage: #728778;
+  --c-sage--light: #8e9f93;
+  --c-sage--pale: #e9edea;
+  --c-olive: #2d4d42;
+  --c-olive--light: #577067;
+  --c-olive--pale: #dfe4e2;
+
+  /* UI */
+  --ui-alert-bg: #ffb566;
+  --ui-alert-bg--muted: #996d3d;
+  --ui-alert-fg: #402d1a;
+
+  --ui-error-bg: #ffa8b1;
+  --ui-error-bg--muted: #99656a;
+  --ui-error-fg: #402a2c;
+
+  --ui-info-bg: #66d6ff;
+  --ui-info-bg--muted: #3d8099;
+  --ui-info-fg: #1a3640;
+
+  --ui-success-bg: #73ffd7;
+  --ui-success-bg--muted: #459981;
+  --ui-success-fg: #1d4036;
+
+  /* DEFAULTS */
+  --primary-bg: var(--c-white);
+  --primary-bg--light: var(--c-white--dark);
+  --primary-bg--pale: var(--c-white--darker);
+
+  --primary-text: var(--c-black);
+  --primary-text--light: var(--c-black--light);
+  --primary-text--pale: var(--c-black--pale);
+
+  --secondary-text: var(--c-olive);
+  --secondary-text--light: var(--c-olive--light);
+  --secondary-text--pale: var(--c-olive--pale);
+}
+
+html {
+  touch-action: manipulation;
+  overscroll-behavior-x: none;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  @apply scroll-smooth p-0 m-0;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: relative;
+  /* overflow-x: hidden; */
+}
+
+a {
+  @apply no-underline text-inherit;
+}
+
+* {
+  @apply box-border;
+}

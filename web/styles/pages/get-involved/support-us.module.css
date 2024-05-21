@@ -1,0 +1,72 @@
+.root {
+}
+
+.titleBlock {
+  @apply py-10 bg-blush-muted;
+}
+
+.titleBlockOverline {
+  @apply block font-primary uppercase text-sm tracking-wider pb-[1em];
+}
+
+.titleBlockTitle {
+  @apply font-primary text-3xl font-bold;
+}
+
+.titleBlockDescription {
+  @apply pt-[1em] text-lg;
+}
+
+.cardGrid {
+  @apply flex flex-row flex-wrap pt-10;
+
+  @apply grid gap-4 auto-cols-fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  @apply duration-200 transition-transform ease-out scale-100;
+}
+
+.cardLink {
+  @apply border-2 border-primary border-solid p-4;
+  @apply w-full h-full;
+  @apply flex flex-col justify-between gap-4;
+  @apply no-underline;
+  @apply bg-background;
+}
+.card:hover {
+  @apply scale-105;
+}
+
+.cardContent {
+  @apply flex flex-col gap-4 pt-4;
+}
+
+.cardButton {
+  @apply w-full mt-[1em];
+}
+
+.buttonNote {
+  @apply block text-sm max-w-[80%] mb-[1em] mt-[1em];
+}
+
+.shareModal {
+  @apply flex flex-col gap-8;
+}
+
+.shareModalTitleBlock {
+  @apply flex flex-col justify-center;
+}
+
+.shareModalTitle {
+  @apply text-center w-full font-secondary font-bold text-lg;
+}
+
+.shareModalDescription {
+  @apply text-primary pt-4;
+}
+
+.shareModalIcons {
+  @apply flex flex-row flex-wrap gap-2 justify-center;
+}
